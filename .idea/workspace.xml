@@ -24,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager">
@@ -85,6 +85,7 @@
       <workItem from="1596616297832" duration="15461000" />
       <workItem from="1596682559842" duration="3000" />
       <workItem from="1597559020516" duration="13708000" />
+      <workItem from="1597580013077" duration="11000" />
     </task>
     <servers />
   </component>

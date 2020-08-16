@@ -130,7 +130,7 @@ pop.columns
 result['시도'] = pd.Series()
 result['시군구'] = pd.Series()
 
-
+print(10)
 
 for y in year:
     for m in month:
