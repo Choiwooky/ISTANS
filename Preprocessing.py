@@ -15,10 +15,11 @@ print("file_list : {}". format(file_list))
 # 통계표_시군구
 for y in year:
     for m in month:
-        file_dir = 'RawData/20'+y+'년_'+m+'월_자동차_등록자료_통계.xlsx'
-        filename = '20'+y+'년_'+m+'월_자동차_등록자료_통계.xlsx'
+        dir = 'RawData/'
+        filename = '20{}년_{}월_자동차_등록자료_통계.xlsx'.format(y, m)
         if filename not in file_list:
             continue
+        file_dir = '{}{}'.format(dir, filename)
         wb = openpyxl.load_workbook(file_dir)
         sheets = wb.sheetnames
         target = [x for x in sheets if '통계표_시군구' in x]
@@ -29,6 +30,8 @@ for y in year:
                 wb.remove_sheet(sheet_name)
         Sfilename = 'CleaningData/20'+y+'년'+m+'월_통계표_시군구.xlsx'
         wb.save(Sfilename)
+
+
 
 # 연료별_등록현황
 for y in year:
@@ -56,3 +59,4 @@ for i, z in enumerate(df['시군구']):
     else:
         df.at[i, '시군구'] =  z
 df.to_csv('./Result/인구자료.csv', encoding='cp949')
+
